@@ -5,7 +5,7 @@ from llama_index.llms.ollama import Ollama
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 # Path to your combined text file
-combined_file = r"C:\Users\ncole\.ollama\models\documents\combined_documents.txt"
+combined_file = r"C:\Users\<INSERTUSERHERE>\.ollama\models\documents\combined_documents.txt"
 
 # Check if file exists
 if not os.path.exists(combined_file):
@@ -28,7 +28,7 @@ index = VectorStoreIndex.from_documents(documents, embed_model=embed_model)
 llm = Ollama(model="llama3")
 query_engine = index.as_query_engine(llm=llm)
 
-print("Muffin Maniacs HR Assistant! What can I help you with today? (type 'exit' to quit):")
+print("This is Muffin Maniacs HR Assistant! \nWhat can I help you with today? (type 'exit' to quit):")
 while True:
     user_q = input("You: ")
     if user_q.lower() in ["exit", "quit"]:
