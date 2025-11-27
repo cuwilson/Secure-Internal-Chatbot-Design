@@ -3,7 +3,7 @@ Download Ollama online
 Install Needed Addons in Powershell
     pip install llama-index llama-index-llms-ollama llama-index-embeddings-huggingface sentence-transformers
 
-Insert combined_documents.txt into .ollama file within the Documents folder
+Insert combined_documents.txt into .ollama file within the Documents folder if one does not exist create one either in file explorer (recomended) or command prompt
     "C:\Users\<INSERTUSERHERE>\.ollama\models\documents"
 
 Place Modelfile and rag_demo.py into the models folder
@@ -33,3 +33,5 @@ On the Ollama application you will need to go into the settings and for model lo
     "C:\Users\<INSERTUSERHERE>\.ollama\models\manifests\registry.ollama.ai\library\muffin-hr"
 
 On the main page on the bottom corner drop the menu and look untill you find muffin-hr
+
+
