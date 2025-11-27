@@ -34,3 +34,4 @@ On the Ollama application you will need to go into the settings and for model lo
 
 On the main page on the bottom corner drop the menu and look untill you find muffin-hr
 
+
